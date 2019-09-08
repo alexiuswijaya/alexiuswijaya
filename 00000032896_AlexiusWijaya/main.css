@@ -1,0 +1,410 @@
+*{  
+    box-sizing:border-box;
+    font-family:'Roboto',sans-serif;
+    outline: none;
+    border:none;
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    }
+
+/* For mobile phones: */
+[class*="col-"] {
+    width:100%;
+    border-radius: 0px;
+}
+@media only screen and (min-width:600px) {
+/* For tablets: (ukuran layar lebih besar dari 600px) */
+.col-m-1 {width:8.33%;}
+.col-m-2 {width:16.66%; display: inline-block;}
+.col-m-3 {width:25%;}    
+.col-m-4 {width:33.33%;}    
+.col-m-5 {width:41.66%;}    
+.col-m-6 {width:50%;}    
+.col-m-7 {width:58.33%;}    
+.col-m-8 {width:66.66%;}    
+.col-m-9 {width:75%;}    
+.col-m-10 {width:83.33%;}    
+.col-m-11 {width:91.66%;}    
+.col-m-12 {width:100%;}
+    }
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: (ukuran layar lebih besar dari 768px)*/
+.col-1 {width:8.33%;}    
+.col-2 {width:15%; display: inline-block;}    
+.col-3 {width:25%;}    
+.col-4 {width:33.33%;}    
+.col-5 {width:41.66%;}    
+.col-6 {width:50%;}    
+.col-7 {width:58.33%;}    
+.col-8 {width:66.66%;}    
+.col-9 {width:75%;}    
+.col-10 {width:83.33%;}    
+.col-11 {width:91.66%;}    
+.col-12 {width:100%;}
+    }
+
+.nama{
+    text-align: center;
+    position: relative;
+    left: 10px;
+}
+    
+.row:after {
+    content:'';
+    clear:both;
+    display:block;
+    margin:0px;
+}
+.rowdiv {
+    float:left;
+}
+
+
+.circle{
+    border-radius: 250px;
+    position: top right;
+}
+
+.padding-8 {
+    padding:8px;
+}
+
+.padding-16 {
+    padding:16px;
+}
+
+.padding-32 {
+    padding:32px;
+}
+
+.padding-64 {
+    padding:64px;
+}
+.padding-128 {
+    padding:128px;
+}
+
+h1 {
+    font-size:64px;
+}
+
+h4 {
+    font-size:18px;
+}
+.center {
+    text-align:center;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+table {
+    border:1px solid black;
+    width:100%;
+    margin:0;
+    padding:0;
+    border-collapse:collapse;
+    border-spacing: 0;
+}
+table tr {
+    border:1px solid black;
+    padding:5px;
+}
+table th,table td {
+    padding:10px;
+    text-align: center;
+}
+table th {
+    text-transform:uppercase;
+    font-size:14px;
+    letter-spacing:1px;
+    background-color: blue;
+}
+@media screen and(max-width:600px){ 
+    table {
+        border: 0;
+}
+
+table thead {
+    display:none;
+    color: blue;
+}
+table tr {
+    margin-bottom:10px;
+    display:block;
+    border-bottom:2px solid black;
+    }
+table td {
+    display:block;
+    text-align:right;
+    font-size:13px;
+    border-bottom:1px dotted black;
+}
+table td:last-child {
+    border-bottom:0;
+}
+table td:before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight:bold;
+}}
+.black {
+    background-color: black;
+    color: white;
+}
+.white {
+    background-color: white;
+    color: black;
+}
+.font-black {
+    color: black;
+}
+
+ul li{
+    float: right;
+    text-align: center;
+    line-height: 40px;
+}
+.navbar li:hover {
+    list-style-type: none;
+    font-weight: 100;
+    background-color: green;
+    text-align: center;
+    background-color: : black
+
+.foto {
+    width: 200px;
+    height:200px;
+    display: inline-block;
+    margin: 2px 2px;
+}
+.img img:hover{
+    transform: scale(1.1);
+}
+
+#footer{
+    bottom: 0px;
+    margin-top: 600px;
+    height: 100px;
+    text-align: center;
+}
+
+.titlecc {
+    position: relative;
+    color: blue;
+    font-weight: 800;
+    font-size: 50;
+    font: justify;
+}
+.titlecc: hover{
+    color :blue;
+}
+
+
+}
+::before {
+    box-sizing: border-box;
+}
+
+.bpk{
+    width: 100;
+    height: 100px;
+    margin-bottom: 25px;
+    background-size: cover; 
+    font-color: white;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background: black; 
+}
+
+#footer h2{
+    font-size: 15px;
+}
+
+/* contact us */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+ 
+body{
+  background: url('bg.jpg') no-repeat top center;
+  background-size: cover;
+  height: 100vh;
+}
+ 
+.wrapper{
+  position: absolute;
+  margin-top: 370px;
+  transform: translateY(-100%);
+  width: 100%;
+  padding: 0px;
+}
+ 
+.contact-form{
+  display: flex;
+  max-width: 550px;
+  margin: 0 auto;
+  background: rgba(0,0,0,0.8);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+ 
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+ 
+.input-fields,
+.msg{
+  width: 48%;
+}
+ 
+.input-fields .input,
+.msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+ 
+.msg textarea{
+  height: 212px;
+}
+ 
+ 
+.btn {
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+ 
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
+}
+
+.name-center{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#footer2{
+    background-color: black;
+    height: 56px;
+    margin: 20px 0px 0px 0px;
+    position: absolute;
+    width: 100%;
+}
+
+#footer2 h2{
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+table{
+     width: 1000px;
+     height: 220px;
+     margin: 70px 0px 0px 180px;
+}
+
+
+#portofolio{
+    margin: 30px 0px 30px 100px;
+
+}
+
+#footer3{
+    background-color: black;
+    height: 56px;
+    margin: 80px 0px 0px 0px;
+    position: absolute;
+    width: 100%;
+}
+
+#footer3 h2{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+#portofolio h1{
+    margin-left: 440px;
+    margin-bottom: 50px;
+}
+
+span{
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  width: 800px;
+  margin-left: 280px;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  margin-left: 70px;
+}
+.gbr{
+    width: 275px;
+    height: 275px;
+    display: inline-block;
+    margin: 2px 2px;
+}
+.gbr:hover{
+    transform: scale(1.1);
+}
+.bpk:hover{
+    transform: scale(1.1);
+}
+
+.tombol:hover{
+    transform: scale(1.1);
+}
